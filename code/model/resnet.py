@@ -1,4 +1,3 @@
-# TODO: add ability to load pretrained
 import torchvision.models as models
 import torch.nn as nn
 
