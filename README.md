@@ -2,7 +2,7 @@
 project for Bayesian Methods of Machine Learning course 2022 @ Skoltech
 
 # Evaluation results
-TODO: link to  the report
+[report](report.pdf)
 ### Cifar10
 
 ||epoch|top-1|top-5|
