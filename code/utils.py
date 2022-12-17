@@ -41,6 +41,7 @@ def create_checkoint_dir(root, model_name, dataset_name):
     checkpoint_dir = os.path.join(root, model_name, dataset_name)
     if not os.path.exists(checkpoint_dir):
         os.makedirs(checkpoint_dir)
+    return checkpoint_dir
 
 
 def top_k_error_rate_metric(logits, targets, k):
