@@ -1,3 +1,4 @@
+import os
 from torch.nn.modules.batchnorm import _BatchNorm
 from IPython.display import clear_output
 import matplotlib.pyplot as plt
@@ -33,3 +34,9 @@ def print_metrics(loss, acc):
     ax[1].plot(acc['test'], 'g.-', label='test')
     ax[1].legend()
     plt.show()
+
+
+def create_checkoint_dir(root, model_name, dataset_name):
+    checkpoint_dir = os.path.join(root, model_name, dataset_name)
+    if not os.path.exists(checkpoint_dir):
+        os.makedirs(checkpoint_dir)
